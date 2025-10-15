@@ -16,6 +16,18 @@ public class FlightSearch {
    private int     childPassengerCount;
    private int     infantPassengerCount;
 
+   public FlightSearch() {
+      this.departureDate = null;
+      this.departureAirportCode = null;
+      this.emergencyRowSeating = false;
+      this.returnDate = null;
+      this.destinationAirportCode = null;
+      this.seatingClass = null;
+      this.adultPassengerCount = -1;
+      this.childPassengerCount = -1;
+      this.infantPassengerCount = -1;
+   }
+
    public boolean runFlightSearch(String departureDate,    String departureAirportCode,   boolean emergencyRowSeating, 
                                   String returnDate,       String destinationAirportCode, String seatingClass, 
                                   int adultPassengerCount, int childPassengerCount,       int infantPassengerCount) {
